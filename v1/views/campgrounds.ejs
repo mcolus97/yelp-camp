@@ -1,0 +1,53 @@
+<html>
+<head>
+  <title> Campgrounds </title>
+  <link type="text/css" rel="stylesheet" href="/css/bootstrap/bootstrap.min.css">
+  <script src="/css/bootstrap/bootstrap.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-expand-sm " style="height:40px; margin-bottom:15px; background-color:#e9ecef">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">YelpCamp</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    <div class="collapse navbar-collapse justify-content-end">
+      <ul class="nav justify-content-end">
+        <li class="nav-item" style="display:inline;"><a class="nav-link" href="#"> Login </a> </li>
+        <li class="nav-item" style="display:inline;"><a class="nav-link" href="#"> Register </a> </li>
+        <li class="nav-item" style="display:inline;"><a class="nav-link" href="#"> Logout </a> </li>
+      </ul>
+    </div>
+</nav>
+<div class="container">
+  <header class="jumbotron">
+    <div class="container">
+      <h1>Welcome to YelpCamp! </h1>
+      <p>View our hand-picked campgrounds from all over the world</p>
+      <a class="btn btn-primary btn-lg"  href="/campgrounds/new">Add New Camp</a>
+    </div>
+  </header>
+
+
+    <div class="row d-flex flex-wrap text-center float-left">
+<     % campgrounds.forEach(function(camps){ %>
+        <div class="col-md-3 col-sm-6">
+          <div class="img-thumbnail" style="margin:10px;">
+            <img src=" <%= camps.image %>" height="200px" width="100%" >
+              <div class="caption">
+                <h4><%= camps.name %></h4>
+              </div>
+            </div>
+          </div>
+<% }); %>
+    </div>
+
+
+
+
+
+
+
+</div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<html>
+<head>
+  <title> create new camp </title>
+  <link type="text/css" rel="stylesheet" href="/css/bootstrap/bootstrap.min.css">
+  <script src="/css/bootstrap/bootstrap.min.js"></script>
+</head>
+<body>
+  <nav class="navbar navbar-default navbar-expand-sm " style="height:40px; margin-bottom:15px; background-color:#e9ecef">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">YelpCamp</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    <div class="collapse navbar-collapse justify-content-end">
+      <ul class="nav justify-content-end">
+        <li class="nav-item" style="display:inline;"><a class="nav-link" href="#"> Login </a> </li>
+        <li class="nav-item" style="display:inline;"><a class="nav-link" href="#"> Register </a> </li>
+        <li class="nav-item" style="display:inline;"><a class="nav-link" href="#"> Logout </a> </li>
+      </ul>
+    </div>
+</nav>
+  <div class="container">
+    <h1 style="text-align:center;"> Create a New Campground <h1><br>
+      <div style="width:30%; margin:auto;">
+        <form action="/campgrounds" method="POST">
+          <div class="form-group">
+            <input class="form-control" type="text" placeholder="name" name="name">
+          </div>
+          <div class="form-group">
+            <input class="form-control" type="text" placeholder="image" name="image">
+          </div>
+          <div class="form-group">
+            <input class="btn btn-lg btn-default btn-block btn-primary" type="submit">
+          </div>
+        </form>
+  <a href="/campgrounds" style="font-size:20px;"> Go Back </a>
+          </div>
+
+
+  </div>
+</body>
+</html>
